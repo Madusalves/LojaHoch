@@ -6,7 +6,7 @@
 4. Rode as migrações.
 
 
-* git clone https://github.com/Madusalves/Estoque.git
+* git clone https://github.com/Madusalves/LojaHoch.git
 * cd Estoque
 * python3 -m venv .venv
 * source .venv/bin/activate
