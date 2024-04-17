@@ -9,6 +9,7 @@
 * git clone https://github.com/Madusalves/LojaHoch.git
 * cd Estoque
 * python3 -m venv .venv
+* pip install django
 * source .venv/bin/activate
 * pip install -r requirements.txt
 * python contrib/env_gen.py
