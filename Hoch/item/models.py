@@ -12,9 +12,15 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
 
     # Name the categories in admin
+    # Individuals registers
+    # Metods
     def __str__(self):
         return self.name
-    
+    '''
+    Individual URL´s for models
+    def get_absolute_url(self):
+    return reverse('model-detail-view', args=[str(self.id)])
+    '''
 
     # store and manage items
 class Item(models.Model):
@@ -25,5 +31,5 @@ class Item(models.Model):
     image = models.ImageField(upload_to='item_image', blank=True, null=True)
     is_sold = models.BooleanField(default=False)
     # who created and what time was created
-    created_by = models.ForeignKey(User, related_name='items', on_delete=models.CASCADE)
+    created_by = models.ForeignKey(User, related_name='items', on_delete=models.CASCADE) # (ForeignKey => um-para-muitos)
     created_at = models.DateTimeField(auto_now_add=True)
